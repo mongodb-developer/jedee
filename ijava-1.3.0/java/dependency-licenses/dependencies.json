@@ -1,0 +1,88 @@
+{
+    "dependencies": [
+        {
+            "moduleName": "com.google.code.gson:gson",
+            "moduleVersion": "2.8.5",
+            "moduleLicense": "Apache License, Version 2.0",
+            "moduleLicenseUrl": "http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+            "moduleName": "eu.neilalexander:jnacl",
+            "moduleUrl": "https://github.com/neilalexander/jnacl",
+            "moduleVersion": "1.0.0",
+            "moduleLicense": "The BSD 2-Clause License",
+            "moduleLicenseUrl": "http://opensource.org/licenses/bsd-license.php"
+        },
+        {
+            "moduleName": "io.github.spencerpark:jupyter-jvm-basekernel",
+            "moduleUrl": "https://github.com/SpencerPark/jupyter-jvm-basekernel",
+            "moduleVersion": "2.3.0",
+            "moduleLicense": "MIT License",
+            "moduleLicenseUrl": "https://opensource.org/licenses/MIT"
+        },
+        {
+            "moduleName": "org.apache.commons:commons-lang3",
+            "moduleUrl": "http://commons.apache.org/proper/commons-lang/",
+            "moduleVersion": "3.8.1",
+            "moduleLicense": "Apache License, Version 2.0",
+            "moduleLicenseUrl": "http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+            "moduleName": "org.apache.ivy:ivy",
+            "moduleUrl": "http://ant.apache.org/ivy/",
+            "moduleVersion": "2.5.0-rc1",
+            "moduleLicense": "Apache License, Version 2.0",
+            "moduleLicenseUrl": "http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+            "moduleName": "org.apache.maven:maven-artifact",
+            "moduleVersion": "3.6.0",
+            "moduleLicense": "Apache License, Version 2.0",
+            "moduleLicenseUrl": "http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+            "moduleName": "org.apache.maven:maven-builder-support",
+            "moduleVersion": "3.6.0",
+            "moduleLicense": "Apache License, Version 2.0",
+            "moduleLicenseUrl": "http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+            "moduleName": "org.apache.maven:maven-model",
+            "moduleVersion": "3.6.0",
+            "moduleLicense": "Apache License, Version 2.0",
+            "moduleLicenseUrl": "http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+            "moduleName": "org.apache.maven:maven-model-builder",
+            "moduleVersion": "3.6.0",
+            "moduleLicense": "Apache License, Version 2.0",
+            "moduleLicenseUrl": "http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+            "moduleName": "org.codehaus.plexus:plexus-component-annotations",
+            "moduleVersion": "1.7.1",
+            "moduleLicense": "Apache License, Version 2.0",
+            "moduleLicenseUrl": "http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+            "moduleName": "org.codehaus.plexus:plexus-interpolation",
+            "moduleUrl": "http://codehaus-plexus.github.io/",
+            "moduleVersion": "1.25",
+            "moduleLicense": "Apache License, Version 2.0",
+            "moduleLicenseUrl": "http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+            "moduleName": "org.codehaus.plexus:plexus-utils",
+            "moduleVersion": "3.1.0",
+            "moduleLicense": "Apache License, Version 2.0",
+            "moduleLicenseUrl": "http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+            "moduleName": "org.zeromq:jeromq",
+            "moduleUrl": "https://github.com/zeromq/jeromq",
+            "moduleVersion": "0.5.1",
+            "moduleLicense": "Mozilla Public License, Version 2.0",
+            "moduleLicenseUrl": "https://www.mozilla.org/en-US/MPL/2.0"
+        }
+    ]
+}
