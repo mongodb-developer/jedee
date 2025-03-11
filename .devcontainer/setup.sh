@@ -17,4 +17,4 @@ export PATH="$PATH:/home/vscode/lib/node_modules/deno"
 deno jupyter --install
 
 # Install MongoDB Deno driver
-sudo deno install --allow-net --allow-read https://deno.land/x/mongo@v0.31.1/mod.ts
+sudo deno install --global --allow-net --allow-read https://deno.land/x/mongo@v0.31.1/mod.ts
