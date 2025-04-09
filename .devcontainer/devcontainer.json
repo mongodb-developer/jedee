@@ -15,7 +15,7 @@
 	"updateContentCommand": "bash .devcontainer/install-mongodb-db-tools.sh",
 	"postCreateCommand": "bash .devcontainer/setup.sh && bash .devcontainer/import.sh",
 	"postAttachCommand": "",
-	"postStartCommand": "jupyter trust java/*.ipynb && jupyter trust javascript/*.ipynb && jupyter trust python/*.ipynb && jupyter notebook java/*.ipynb --kernel java",
+	"postStartCommand": "jupyter trust java/*.ipynb && jupyter trust javascript/*.ipynb && jupyter trust python/*.ipynb && jupyter notebook .",
 	"customizations": {
 		"codespaces": {
 			"openFiles": [
