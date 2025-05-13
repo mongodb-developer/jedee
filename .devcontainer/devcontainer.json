@@ -12,8 +12,8 @@
 		},
 		"ghcr.io/devcontainers/features/python:1": {}
 	},
-	"updateContentCommand": "bash .devcontainer/install-mongodb-db-tools.sh",
-	"postCreateCommand": "bash .devcontainer/setup.sh && bash .devcontainer/import.sh",
+	"updateContentCommand": "bash .devcontainer/install-mongodb-db-tools.sh && bash .devcontainer/setup.sh && bash .devcontainer/import.sh",
+	"postCreateCommand": "",
 	"postAttachCommand": "",
 	"postStartCommand": "jupyter trust java/*.ipynb && jupyter trust javascript/*.ipynb && jupyter trust python/*.ipynb && jupyter notebook .",
 	"customizations": {
