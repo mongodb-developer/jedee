@@ -19,7 +19,7 @@
 	"customizations": {
 		"codespaces": {
 			"openFiles": [
-				"0_connect_database.ipynb"
+				"README.md"
 			]
 		},
 		"vscode": {
@@ -31,7 +31,7 @@
 	},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [
-		3000,
+		8888,
 		27017
 	],
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
