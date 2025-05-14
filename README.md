@@ -8,9 +8,9 @@ Instead of creating a new MongoDB Atlas Cluster (which BTW is a good idea as tho
 
 We aim to have the same set of examples for every different language. Right now you have:
 
-- Java
-- Python
-- Javascript
+- [Java](/java)
+- [Python](/python/)
+- [Javascript](/javascript/)
 
 ## Containers
 
