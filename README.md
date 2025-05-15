@@ -1,3 +1,6 @@
+[![Open JEDEE in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/mongodb-developer/jedee)
+
+
 # JEDEE: Jupyter EDEE
 
 This repo is an implementation of the Enterprise Development Environment Emulator that we use at MongoDB to provide a quick and simple way to start coding against a MongoDB database.
@@ -11,6 +14,21 @@ We aim to have the same set of examples for every different language. Right now 
 - [Java](/java)
 - [Python](/python/)
 - [Javascript](/javascript/)
+
+## Database
+
+The Library database in included, along with a pre-defined connection inside the MongoDB Visual Studio Code extension. Just open the extension and click on the connection to browse the Library database.
+
+If you need to restore the original data, open a Terminal in Visual Studio code and type:
+
+```shell
+.devcontainer/import.sh 
+```
+
+## open ports
+
+- 3000: Jupyter notebooks
+- 27017: MongoDB Atlas instance 
 
 ## Containers
 
