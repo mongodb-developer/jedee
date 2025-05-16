@@ -1,2 +1,3 @@
 .ipynb_checkpoints
 .devcontainer/data/library
+.devcontainer/data/library_with_embeddings/*.?son
