@@ -5,6 +5,8 @@
 
 JEDEE is a __set of coding examples that will help you learn how to use MongoDB__. We use Jupyter Notebooks because of their interactivity and inmediate feedback. This, along with the ability to include instructions mixed with code facilitates our approach of learning by doing and testing new concepts. 
 
+If you've never used Jupyter Notebooks, [here is a one-page quick start](https://mongodb-developer.github.io/vector-search-lab/docs/dev-env/jupyter-notebooks).
+
 We use JEDEE during our Developer Days Labs, to speed up the time from theory to code. We also use JEDEE in webinars, MongoDB .Local Labs / demos and during customer meetings or Design Reviews.
 
 ## How to use JEDEE
