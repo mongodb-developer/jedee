@@ -6,15 +6,15 @@
 	"service": "jedee",
 	"features": {
 		"ghcr.io/devcontainers/features/java:1": {
-			"version": "none",
+			"version": "21",
 			"installMaven": "true",
-			"installGradle": "false"
+			"mavenVersion": "3.9.10"
 		},
 		"ghcr.io/devcontainers/features/python:1": {},
-		"ghcr.io/devcontainers/features/dotnet:2.2.0": {
-        	"version": "7.0",
+		"ghcr.io/devcontainers/features/dotnet:2.3.0": {
+        	"version": "9.0",
         	"installUsingApt": true
-    }
+    	}
 	},
 	"updateContentCommand": "bash .devcontainer/install-mongodb-db-tools.sh && bash .devcontainer/setup.sh && bash .devcontainer/import.sh",
 	"postCreateCommand": "",
