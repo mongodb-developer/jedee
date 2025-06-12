@@ -18,7 +18,7 @@ cd library_with_embeddings
 cat xa* > books.bson.gz 
 
 # uncompress all the files (all the .gz files will be deleted)
-gzip -d *.gz 
+gzip --force -d *.gz 
 
 # delete the splitted files, no longer needed
 rm xa* 
