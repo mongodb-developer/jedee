@@ -10,7 +10,10 @@
 			"installMaven": "true",
 			"mavenVersion": "3.9.10"
 		},
-		"ghcr.io/devcontainers/features/python:1": {},
+		// https: //github.com/devcontainers/features/tree/main/src/python
+		"ghcr.io/devcontainers/features/python:1": {
+			"version": "3.12"
+		},
 		"ghcr.io/devcontainers/features/dotnet:2.3.0": {
         	"version": "9.0",
         	"installUsingApt": true
@@ -19,7 +22,7 @@
 	"updateContentCommand": "bash .devcontainer/install-mongodb-db-tools.sh && bash .devcontainer/setup.sh && bash .devcontainer/import.sh",
 	"postCreateCommand": "",
 	"postAttachCommand": "",
-	"postStartCommand": "jupyter trust java/*.ipynb && jupyter trust javascript/*.ipynb && jupyter trust python/*.ipynb && jupyter trust dotnet/*.ipynb && jupyter notebook dotnet/*. && jupyter notebook .",
+	"postStartCommand": "jupyter trust java/*.ipynb && jupyter trust javascript/*.ipynb && jupyter trust python/*.ipynb && jupyter trust dotnet/*.ipynb && jupyter notebook dotnet/*.ipynb",
 	"customizations": {
 		"codespaces": {
 			"openFiles": [
