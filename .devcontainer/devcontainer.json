@@ -10,22 +10,28 @@
 			"installMaven": "true",
 			"installGradle": "false"
 		},
-		"ghcr.io/devcontainers/features/python:1": {}
+		"ghcr.io/devcontainers/features/python:1": {},
+		"ghcr.io/devcontainers/features/dotnet:2.2.0": {
+        	"version": "7.0",
+        	"installUsingApt": true
+    }
 	},
 	"updateContentCommand": "bash .devcontainer/install-mongodb-db-tools.sh && bash .devcontainer/setup.sh && bash .devcontainer/import.sh",
 	"postCreateCommand": "",
 	"postAttachCommand": "",
-	"postStartCommand": "jupyter trust java/*.ipynb && jupyter trust javascript/*.ipynb && jupyter trust python/*.ipynb && jupyter notebook .",
+	"postStartCommand": "jupyter trust java/*.ipynb && jupyter trust javascript/*.ipynb && jupyter trust python/*.ipynb && jupyter trust dotnet/*.ipynb && jupyter notebook dotnet/*. && jupyter notebook .",
 	"customizations": {
 		"codespaces": {
 			"openFiles": [
-				"README.md"
+				"dotnet/00_open_mongodb.ipynb"
 			]
 		},
 		"vscode": {
 			"extensions": [
 				"ms-toolsai.jupyter",
-				"mongodb.mongodb-vscode"
+				"mongodb.mongodb-vscode",
+				"ms-dotnettools.csharp",
+				"ms-dotnettools.dotnet-interactive-vscode"
 			]
 		}
 	},
