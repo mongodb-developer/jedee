@@ -6,9 +6,9 @@
 	"service": "jedee",
 	"features": {
 		"ghcr.io/devcontainers/features/java:1": {
-			"version": "none",
+			"version": "21",
 			"installMaven": "true",
-			"installGradle": "false"
+			"mavenVersion": "3.9.10"
 		},
 		"ghcr.io/devcontainers/features/python:1": {}
 	},
