@@ -1,0 +1,16 @@
+{
+    "servers": {
+        "Mongodb Local MCP Server": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@pash1986/mcp-server-mongodb"
+            ],
+            "env": {
+                "MDB_MCP_CONNECTION_STRING": "mongodb://admin:mongodb@localhost:27017/library?authSource=admin&directConnection=true",
+                "MONGODB_URI": "mongodb://admin:mongodb@localhost:27017/library?authSource=admin&directConnection=true"
+            },
+            "type": "stdio"
+        }
+    }
+}

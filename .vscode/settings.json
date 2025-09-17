@@ -4,5 +4,12 @@
             "name": "Library DB",
             "connectionString": "mongodb://admin:mongodb@localhost:27017"
         }
-    ]
+    ],
+    "mdb.confirmRunAll": false,
+    "chat.mcp.serverSampling": {
+        "jedee/.vscode/mcp.json: Mongodb Local MCP Server": {
+            "allowedModels": [
+                "copilot/gpt-4.1"
+            ]        }
+    }
 }
