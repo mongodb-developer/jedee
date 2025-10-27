@@ -24,6 +24,10 @@ echo ✅ -----------------------------
 sudo apt-get install python3-pymongo -y
 sudo apt-get clean packages
 
+# Dotnet Kernel
+sudo dotnet tool install -g Microsoft.dotnet-interactive
+sudo dotnet interactive jupyter install
+
 echo ✅ Install Deno
 echo ✅ ------------
 # Install deno - Nodejs modern engine
