@@ -44,3 +44,11 @@ echo ✅ Install MongoDB Deno Driver
 echo ✅ ---------------------------
 # Install MongoDB Deno driver
 sudo deno install --global --allow-net --allow-read https://deno.land/x/mongo@v0.31.1/mod.ts
+
+
+echo ✅ Install Node.js v23 
+echo ✅ ----------------
+# Install Node.js 23 as MongoDB MCP server needs at least v20 (https://github.com/mongodb-js/mongodb-mcp-server?tab=readme-ov-file#prerequisites)
+sudo npm install -g n
+sudo n 23
+hash -r 
