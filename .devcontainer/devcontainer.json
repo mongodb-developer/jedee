@@ -23,12 +23,7 @@
 	"postCreateCommand": "",
 	"postAttachCommand": "",
 	"postStartCommand": "jupyter trust java/*.ipynb && jupyter trust javascript/*.ipynb && jupyter trust python/*.ipynb && jupyter trust dotnet/*.ipynb && jupyter notebook dotnet/*.ipynb",
-	"customizations": {
-		"codespaces": {
-			"openFiles": [
-				"dotnet/00_open_mongodb.ipynb"
-			]
-		},
+	"customizations": {		
 		"vscode": {
 			"extensions": [
 				"ms-toolsai.jupyter",
