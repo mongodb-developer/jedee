@@ -8,10 +8,11 @@ on:
   push:  
     push:
       branches:
-      - ''
+        - '**'
       pull_request:
-      branches:
-      - ''
+        branches:
+          - '**'
+
   
 jobs:  
   remove-notebook-outputs:  
