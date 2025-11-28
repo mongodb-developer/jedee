@@ -6,11 +6,12 @@ permissions:
 
 on:  
   push:  
-    branches:  
-      # - main  
-      - test
-    # paths:  
-    #   - package.json  # Adjust as needed  
+    push:
+      branches:
+      - ''
+      pull_request:
+      branches:
+      - ''
   
 jobs:  
   remove-notebook-outputs:  
