@@ -1,0 +1,6 @@
+{
+    "nodeModulesDir": "auto",
+    "imports": {
+        "mongodb": "npm:mongodb@6.19.0"
+    }
+}
