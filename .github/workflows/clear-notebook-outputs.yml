@@ -1,0 +1,65 @@
+# .github/workflows/clear-notebook-outputs.yml  
+# This workflow removes the outputs from Jupyter notebooks (.ipynb files)
+# whenever changes are pushed to the repository.
+# When we run a Notebook locally it generates output that we don't want to commit
+name: Remove Notebook Outputs  
+permissions:
+  contents: write
+
+on:  
+  push:  
+    push:
+      branches:
+        - '**'
+      pull_request:
+        branches:
+          - '**'
+
+  
+jobs:  
+  remove-notebook-outputs:  
+    runs-on: ubuntu-latest  
+    steps:  
+      - name: Checkout source repo  
+        uses: actions/checkout@v4  
+  
+      - name: Set up Git  
+        run: |  
+          git config --global user.name "Clear Notebook Outputs Action"  
+          git config --global user.email "diego.freniche@mongodb.com"  
+      
+      - name: Install prerequisites  
+        run: |  
+          sudo apt-get update -y
+
+          sudo apt-get install python3.8 -y
+
+          echo ✅ Install Jupyter notebook
+          echo ✅ ------------------------
+          # Install Jupyter notebook
+          sudo apt-get install jupyter -y
+
+      - name: Clear Jupyter notebook run outputs  
+        run: |  
+          # Get all notebook files
+          files=$(git ls-files '*.ipynb')
+          [ -z "$files" ] && exit 0
+
+          for f in $files; do
+            echo $f
+            # Clear outputs + execution_count in place
+            jupyter nbconvert \
+              --ClearOutputPreprocessor.enabled=True \
+              --inplace "$f"
+
+            # Re-stage cleaned file
+            git add "$f"
+          done
+
+          if git diff --cached --quiet; then
+            echo "No staged changes; skipping commit"
+            exit 0
+          else
+            git commit -m "Clear notebook outputs" --no-verify
+            git push origin HEAD:${{ github.ref_name }}  
+          fi
