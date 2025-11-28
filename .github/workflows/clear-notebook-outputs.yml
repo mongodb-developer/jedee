@@ -11,7 +11,7 @@ on:
     #   - package.json  # Adjust as needed  
   
 jobs:  
-  propagate:  
+  remove-notebook-outputs:  
     runs-on: ubuntu-latest  
     steps:  
       - name: Checkout source repo  
@@ -21,8 +21,8 @@ jobs:
         run: |  
           git config --global user.name "Clear Notebook Outputs Action"  
           git config --global user.email "diego.freniche@mongodb.com"  
-  
-      - name: Clear notebook outputs in target repos and create PRs  
+      
+      - name: Install prerequisites  
         run: |  
           sudo apt-get update -y
 
@@ -32,7 +32,9 @@ jobs:
           echo ✅ ------------------------
           # Install Jupyter notebook
           sudo apt-get install jupyter -y
-          
+
+      - name: Clear notebook outputs in target repos and create PRs  
+        run: |  
           # Get all notebook files
           files=$(git ls-files '*.ipynb')
           [ -z "$files" ] && exit 0
