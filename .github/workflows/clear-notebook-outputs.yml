@@ -1,6 +1,6 @@
 # .github/workflows/propagate-config.yml  
 # This workflow keeps repos in sync
-name: Propagate Config File  
+name: Remove Notebook Outputs  
   
 on:  
   push:  
@@ -24,6 +24,15 @@ jobs:
   
       - name: Clear notebook outputs in target repos and create PRs  
         run: |  
+          sudo apt-get update -y
+
+          sudo apt-get install python3.8 -y
+
+          echo ✅ Install Jupyter notebook
+          echo ✅ ------------------------
+          # Install Jupyter notebook
+          sudo apt-get install jupyter -y
+          
           # Get all notebook files
           files=$(git ls-files '*.ipynb')
           [ -z "$files" ] && exit 0
