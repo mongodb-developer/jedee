@@ -56,5 +56,10 @@ jobs:
             git add "$f"
           done
 
-          git commit -m "Clear notebook outputs" --no-verify
-          git push origin HEAD:${{ github.ref_name }}  
+          if git diff --cached --quiet; then
+            echo "No staged changes; skipping commit"
+            exit 0
+          else
+            git commit -m "Clear notebook outputs" --no-verify
+            git push origin HEAD:${{ github.ref_name }}  
+          fi
