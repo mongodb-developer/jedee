@@ -1,5 +1,7 @@
-# .github/workflows/propagate-config.yml  
-# This workflow keeps repos in sync
+# .github/workflows/clear-notebook-outputs.yml  
+# This workflow removes the outputs from Jupyter notebooks (.ipynb files)
+# whenever changes are pushed to the repository.
+# When we run a Notebook locally it generates output that we don't want to commit
 name: Remove Notebook Outputs  
 permissions:
   contents: write
