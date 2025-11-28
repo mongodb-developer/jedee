@@ -1,7 +1,9 @@
 # .github/workflows/propagate-config.yml  
 # This workflow keeps repos in sync
 name: Remove Notebook Outputs  
-  
+permissions:
+  contents: write
+
 on:  
   push:  
     branches:  
@@ -51,3 +53,4 @@ jobs:
           done
 
           git commit -m "Clear notebook outputs" --no-verify
+          git push origin HEAD:${{ github.ref_name }}  
