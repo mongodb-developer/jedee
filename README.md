@@ -11,6 +11,8 @@ We use JEDEE during our Developer Days Labs, to speed up the time from theory to
 
 ## How to use JEDEE
 
+### Run JEDEE in a GitHub Codespace
+
 - Log in to your Github Account. This is needed to start a new Codespace.
     - If you log in with your enterprise / organization account maybe they have restricted the use of Codespaces. In that case use your personal Github account.
 - Click this button 
@@ -18,15 +20,24 @@ We use JEDEE during our Developer Days Labs, to speed up the time from theory to
 [![Open JEDEE in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/mongodb-developer/jedee)
 - This will create a couple Docker containers, open Visual Studio Code in the browser and clone the repo.
 - Wait for the Codespace to finish loading. You know everything has finished when you see the MongoDB Visual Studio Code extension loaded at the left (looks like a leaf)
-- Navigate to the examples you want to run and click on the run icon. You'll be asked to choose a kernel. Pick Java for the Java examples, Deno for Javascript and Python for, well, Python code.
+- Navigate to the examples you want to run and click on the run icon. You'll be asked to choose a kernel. Pick Java for the Java examples, Deno for Javascript, DotNet for the C# code and Python for, well, Python code.
+
+### Run JEDEE locally
+
+- Install [Docker](https://docs.docker.com/get-started/introduction/get-docker-desktop/) in your system
+- Clone the repo: `git clone https://github.com/mongodb-developer/jedee`
+- Install [Visual Studio Code](https://code.visualstudio.com/)
+- Open the repo from VSC, open the [Command Palette](https://code.visualstudio.com/api/ux-guidelines/command-palette), select `Dev Containers: Rebuild and reopen in Container`
+- JEDEE will start two containers (see section below) 
 
 ## Available code examples
 
-We aim to have the same set of examples for every different language. Right now you have:
+We aim to have the same set of examples for each supported language. Right now you have available:
 
 - [Java](/java)
 - [Python](/python/)
 - [Javascript](/javascript/)
+- [C#](/dotnet/)
 
 ## Database
 
