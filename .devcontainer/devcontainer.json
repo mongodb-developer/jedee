@@ -28,8 +28,7 @@
 			"extensions": [
 				"ms-toolsai.jupyter",
 				"mongodb.mongodb-vscode",
-				"ms-dotnettools.csharp",
-				"ms-dotnettools.dotnet-interactive-vscode"
+				"ms-dotnettools.csharp"			
 			]
 		}
 	},
