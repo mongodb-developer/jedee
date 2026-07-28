@@ -1,5 +1,20 @@
-[![Open JEDEE in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/mongodb-developer/jedee)
+```
+DEPRECATED REPO NOTICE BEGIN
+```
+__DEPRECATION NOTICE__
+This repo has been deprecated in favor of these 4 language focused labs:
 
+- [Java](https://github.com/mongodb-developer/query-api-java-lab)
+- [Python](https://github.com/mongodb-developer/query-api-python-lab)
+- [Javascript](https://github.com/mongodb-developer/query-api-js-lab)
+- [C#](https://github.com/mongodb-developer/query-api-dotnet-lab)
+
+We encourage you to check out those labs. This repository will be archived and no longer maintained.
+```
+DEPRECATED REPO NOTICE END
+```
+---
+[![Open JEDEE in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/mongodb-developer/jedee)
 
 # JEDEE: Jupyter EDEE
 
